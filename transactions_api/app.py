@@ -27,12 +27,24 @@ def validate_data(data):
         schema = {
             "type": "object",
             "properties": {
-                "accountNumber": {"type": "string"},
-                "amount": {"type": "float"},
-                "vendor": {"type": "string"},
-                "timestamp": {"type": "string"}
+                "accountNumber": {
+                    "type": "number",
+                    "description": "The user's account number"
+                },
+                "amount": {
+                    "type": "number",
+                    "description": "monetary value of transaction"
+                },
+                "vendor": {
+                    "type": "string",
+                    "description": "merchant"
+                },
+                "timestamp": {"type": "string",
+                              "format": "date-time",
+                              "description": "time of transaction"
+                }
             },
-            "required": ["transaction_id", "user_id", "amount", "currency", "timestamp"]
+            "required": ["accountNumber", "amount", "vendor", "timestamp"]
         }
         # Validate the JSON data against the schema
         validate(instance=data, schema=schema)

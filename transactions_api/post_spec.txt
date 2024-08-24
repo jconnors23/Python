@@ -7,9 +7,9 @@
 # Timestamp: ISO 8601 timestamp
 # Vendor: String
 # Amount: Float, two decimal places
-# [{
+#  [{
 #         "accountNumber": 123456789,
-#         "amount": 22.50,
+#        "amount": 22.50,
 #         "vendor": "Alpha Inc.",
 #         "timestamp": "2024-03-27 18:00:00.000"
 # },
