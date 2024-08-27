@@ -1,0 +1,11 @@
+for starters, if len (rn) > len(mag) return false 
+orchestrate a map for magazine where the keys are letters and values are flags dictating if used
+iterate through rn, for char in rn, if map(char) == true then we return false, else set to true 
+after we have iterated, rn should be constructed and we return true 
+
+
+how do we account for duplicate chars in magazine? 
+
+- instead of values being boolean flags maybe we use a counter
+- so if a char is used we incremenet counter 
+- if in iteration of rn we go to use a char and the counter variable == 0, we return false 

@@ -1,7 +1,8 @@
-Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.
+Given a string s representing a valid expression, 
+implement a basic calculator to evaluate it
 
-Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().
-
+Note: You are not allowed to use any built-in function which evaluates strings as 
+mathematical expressions, such as eval().
  
 
 Example 1:
