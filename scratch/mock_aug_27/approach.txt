@@ -1,0 +1,22 @@
+Input: nums = [1,12,-5,-6,50,3], k = 4, 0 3, 1 4 2 5 
+
+init max_average, set to 0, 
+init length set to k 
+
+iterate through nums 
+
+    if i + k > len (i):
+      continue 
+    else:
+     calculate = nums[i:i+k]
+     sum = 0 
+     for num in calculate:
+        sum += num
+     average = sum / len (calculate)
+     if average > max_average:
+        max_average = average
+return max_average
+
+average equals math library average of nums[i:i+k] - > [1,12,-5,-6] 
+
+
