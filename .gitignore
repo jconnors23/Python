@@ -2,3 +2,4 @@ __pycache__/
 transactions_api/description.txt
 transactions_api/received_data.json
 transactions_api/schema.json
+.pytest_cache
