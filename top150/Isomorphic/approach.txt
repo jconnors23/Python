@@ -1,0 +1,23 @@
+https://leetcode.com/problems/isomorphic-strings/description/?envType=study-plan-v2&envId=top-interview-150
+
+init map for char s that have mapped to other char t called 'mapped' 
+
+thankyou
+apple
+
+for char in val of keys[char] if count > 1 return false
+
+call above iteration method for each time we map ? 
+
+keys[char] : [chars mapped to], if count(distinct chars mapped to > 1 return false)
+
+iterate through s for i in range(len(s)):
+    mapped[s] = t[i] # only append if unique char so if s in mapped of s 
+    if len(mapped[s] > 1): return false 
+    each time we map, add to dict ex mapped[m] = m
+        checks:
+
+        
+        if 'mapped' of char exists, return false 
+            else add to map: mapped[char] = char mapping to 
+                ex: mapped[m] = m
