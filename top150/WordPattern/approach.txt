@@ -1,0 +1,35 @@
+pat - a b b a 
+
+s - dog cat cat fish 
+
+ init map for distinct chars in pat 
+ { 
+    a - []
+    b - []
+ }
+pat_map = {
+    
+}
+ for char in pat:
+    if char in pat_map:
+        continue
+
+ split s so that we can iterate through individual words 
+ s = [ dog, cat, cat, fish ]
+ track = 0
+ words = []
+ for i in range len(s):
+    if s[i] == "' '"
+        words.append(s[track:i])
+        track = i 
+
+seen = []
+ for word in words:
+    if word not in seen 
+        fine = false
+        for key in pat_map:
+            if len(pat_map[key]) == 0:
+                pat_map[key].append(word)
+                fine = true
+        if fine == false return false else seen.append(word)
+        
