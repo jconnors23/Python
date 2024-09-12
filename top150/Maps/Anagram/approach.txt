@@ -1,0 +1,9 @@
+cinema iceman 
+
+create map of chars in t where keys are char val are count of var 
+
+loop through s, if char of s is in map of t, t[char] = true
+
+loop through map of t, if find one val for key = fal return fal 
+
+
