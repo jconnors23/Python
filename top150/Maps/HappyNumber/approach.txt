@@ -1,0 +1,20 @@
+Input: n = 19
+Output: true
+Explanation:
+12 + 92 = 82
+82 + 22 = 68
+62 + 82 = 100
+12 + 02 + 02 = 1
+Example 2:
+
+Input: n = 2
+
+create map of squares of each digit 0 - 9, 
+keys are strings of digits while val is the int 
+convert n to string, 
+get individual digits for lookup, 
+convert summed squares back to new
+loop through n, 
+setting new n equal to 
+sum of look up values for num in n 
+when n equals len(1), see if that val is equal to 1
