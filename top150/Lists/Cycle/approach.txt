@@ -1,0 +1,2 @@
+we need to go to the tail of the L, see if self.next val = a value for a node that we have already visited, return if true
+while we traverse the list, store values for nodes in arr, if self.next of val at tail.equals val in list, is true 
