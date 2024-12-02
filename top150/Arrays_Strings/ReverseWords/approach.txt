@@ -1,0 +1,5 @@
+create string j 
+reverse s via slice 
+if s[i] == space:
+j += s[x] to s[i].reverse - do on sep line 
+
