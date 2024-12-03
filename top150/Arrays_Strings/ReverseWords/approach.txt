@@ -3,3 +3,4 @@ reverse s via slice
 if s[i] == space:
 j += s[x] to s[i].reverse - do on sep line 
 
+if no more spaces at last word in string have to go to last occurence of space and slice from there, we increment track but also record last track
