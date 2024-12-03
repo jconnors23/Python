@@ -24,18 +24,20 @@ def receive_data():
 
 
 # Define the schema for a single transaction
-transactions_schema = Schema({
+transaction_schema = Schema({
     'accountNumber': And(int, lambda n: n > 0),
     'amount': And(float, lambda f: f >= 0),
     'vendor': str,
     'timestamp': And(str, Use(lambda s: s.endswith('Z')))
 })
+# Define the schema for multiple transactions
+transactions_schema = Schema([transaction_schema])
 
 
 def validate_transactions(transactions):
     try:
         transactions_schema.validate(transactions)
-        print("Validation successful!")
+        print("Validation successful.")
     except SchemaError as e:
         raise ValueError(f"Validation error: {e}")
 
