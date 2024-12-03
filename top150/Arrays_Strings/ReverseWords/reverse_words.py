@@ -1,5 +1,5 @@
 class Solution(object):
-
+    
     def reverseWords(self, s):
         stripped_s = s.strip()
         clean_s = ' '.join(stripped_s.split())
