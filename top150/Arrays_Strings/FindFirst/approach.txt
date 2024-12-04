@@ -1,0 +1,7 @@
+index method: 
+
+    first check if substring in string, if not in return -1 
+    then return string.index(substring)
+
+find method: 
+    return string.find(substring)
