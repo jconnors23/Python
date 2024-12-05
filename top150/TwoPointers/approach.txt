@@ -1,0 +1,5 @@
+run s.strip() and replace 
+
+remove the numbers: if char is digit, remove it 
+
+iterate through cleaned s 

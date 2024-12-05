@@ -39,7 +39,9 @@ def validate_transactions(transactions):
         transactions_schema.validate(transactions)
         print("Validation successful.")
     except SchemaError as e:
-        raise ValueError(f"Validation error: {e}")
+        error_message = f"Validation error occured for transaction schema: {e}"
+        print(error_message)
+        raise ValueError(error_message)
 
 
 if __name__ == '__main__':
